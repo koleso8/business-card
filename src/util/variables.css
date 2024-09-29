@@ -1,0 +1,22 @@
+:root {
+  --font-family: 'Inter Tight', sans-serif;
+  --background: #1c1d20;
+  --cards: #242527;
+  --arrow: #3b3b3b;
+  --text: #fafafa;
+  --title: rgba(250, 250, 250, 0.4);
+  --text2: rgba(250, 250, 250, 0.6);
+  --circle: rgba(250, 250, 250, 0.2);
+  --accent-stroke: #fafafa;
+  --transition: 300ms (0.41, 0.6, 0.52, 0.93);
+}
+
+html[data-theme='dark'] {
+  --color-text: #fff;
+  --bg-color: #000;
+}
+
+html[data-theme='light'] {
+  --color-text: #000;
+  --bg-color: #93eaef;
+}
