@@ -1,6 +1,8 @@
-export const effect = () => {
-  VANTA.FOG({
-    el: '#root',
+let effect = null;
+
+export const startEffect = () => {
+  effect = VANTA.FOG({
+    el: '#vanta',
     mouseControls: true,
     touchControls: true,
     gyroControls: true,
@@ -17,20 +19,26 @@ export const effect = () => {
     lowlightColor: 0x6ff5f5,
     baseColor: 0xa9def5,
     blurFactor: 0.64,
-    speed: 1.9,
+    speed: 3.1,
     zoom: 1.1,
   });
+  return effect;
 };
+
 export const darkAnimation = () => {
   effect.setOptions({
-    color: 0xed3b44,
-    backgroundColor: 0x1c1d20,
+    highlightColor: 0x0,
+    midtoneColor: 0x20208c,
+    lowlightColor: 0x92464,
+    baseColor: 0x2eb9,
   });
 };
 
 export const lightAnimation = () => {
   effect.setOptions({
-    color: 0xc6e327,
-    backgroundColor: 0x1c1d20,
+    highlightColor: 0xffffff,
+    midtoneColor: 0xa4a4f5,
+    lowlightColor: 0x6ff5f5,
+    baseColor: 0xa9def5,
   });
 };

@@ -11,12 +11,12 @@
   --transition: 300ms (0.41, 0.6, 0.52, 0.93);
 }
 
-html[data-theme='dark'] {
+.dark {
   --color-text: #fff;
   --bg-color: #000;
 }
 
-html[data-theme='light'] {
+.light {
   --color-text: #ff9d00;
   --bg-color: #93eaef33;
 }
