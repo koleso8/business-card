@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Layout from './pages/Layout';
 import { useTheme } from './hooks/useTheme';
+import './util/vantaAnimation.js';
 
 const App = () => {
   const { theme, setTheme } = useTheme();

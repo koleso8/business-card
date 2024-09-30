@@ -17,6 +17,6 @@ html[data-theme='dark'] {
 }
 
 html[data-theme='light'] {
-  --color-text: #000;
-  --bg-color: #93eaef;
+  --color-text: #ff9d00;
+  --bg-color: #93eaef33;
 }
