@@ -12,11 +12,11 @@
 }
 
 .dark {
-  --color-text: #fff;
+  --color: #fff;
   --bg-color: #000;
 }
 
 .light {
-  --color-text: #ff9d00;
-  --bg-color: #93eaef33;
+  --color: #895604;
+  --bg-color: #ffffffc9;
 }
