@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import headerHide from './headerHide';
 import { RxColorWheel } from 'react-icons/rx';
 import { startEffect } from '../../util/vantaAnimation';
