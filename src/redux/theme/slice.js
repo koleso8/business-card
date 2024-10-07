@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-// import { darkAnimation, lightAnimation } from '../../util/vantaAnimation';
 
 const initialState = {
   theme: 'light',

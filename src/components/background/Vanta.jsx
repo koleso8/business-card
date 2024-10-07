@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import NET from 'vanta/dist/vanta.net.min';
 
-const Vanta = () => {
+const Vanta = ({ theme }) => {
   const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
+
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
@@ -23,10 +24,12 @@ const Vanta = () => {
         })
       );
     }
+
     return () => {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
+
   return (
     <div
       ref={myRef}

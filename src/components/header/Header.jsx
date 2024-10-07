@@ -17,7 +17,7 @@ const Header = () => {
     dispatch(setTheme());
   });
   return (
-    <header className="fixed backdrop-blur-3xl w-screen transition-transform ease-in-out delay-150 duration-300 header flex items-center justify-center  py-2">
+    <header className="fixed backdrop-blur-xl w-screen transition-transform ease-in-out delay-150 duration-300 header flex items-center justify-center  py-2">
       <div className="w-[90%] flex items-center gap-3">
         <RxColorWheel
           size="60px"
