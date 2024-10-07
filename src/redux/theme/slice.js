@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { darkAnimation, lightAnimation } from '../../util/vantaAnimation';
+// import { darkAnimation, lightAnimation } from '../../util/vantaAnimation';
 
 const initialState = {
   theme: 'light',
@@ -11,21 +11,16 @@ const slice = createSlice({
   reducers: {
     setTheme: state => {
       document.body.classList.add(state.theme);
-      if (state.theme === 'dark') {
-        darkAnimation();
-      }
     },
     changeTheme: state => {
       if (state.theme === 'light') {
         document.body.classList.add('dark');
         state.theme = 'dark';
         document.body.classList.remove('light');
-        darkAnimation();
       } else {
         document.body.classList.add('light');
         state.theme = 'light';
         document.body.classList.remove('dark');
-        lightAnimation();
       }
     },
   },

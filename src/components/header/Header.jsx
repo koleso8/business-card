@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import headerHide from './headerHide';
 import { RxColorWheel } from 'react-icons/rx';
-import { startEffect } from '../../util/vantaAnimation';
+// import { startEffect } from '../../util/vantaAnimation';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeTheme, setTheme } from '../../redux/theme/slice';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
@@ -13,7 +13,7 @@ const Header = () => {
   const theme = useSelector(selectTheme);
   useEffect(() => {
     headerHide();
-    startEffect();
+    // startEffect();
     dispatch(setTheme());
   });
   return (

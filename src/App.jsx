@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Layout from './pages/Layout';
-import './util/vantaAnimation.js';
+
 import Home from './pages/Home.jsx';
 
 const App = () => {

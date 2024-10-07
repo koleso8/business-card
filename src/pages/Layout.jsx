@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <div
-        id="vanta"
+        // id="vanta"
         className="w-screen h-screen top-0 left-0 -z-10 fixed "
       ></div>
       <div className="flex flex-col justify-between items-center w-screen ">
