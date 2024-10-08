@@ -6,6 +6,7 @@
 
 html {
   color: var(--color);
+  overflow-x: hidden;
 }
 
 .active {
@@ -26,6 +27,6 @@ html {
   padding: 20px;
 }
 
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet {
   background-color: var(--red);
 }

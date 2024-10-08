@@ -1,12 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import {
-  A11y,
-  Pagination,
-  Scrollbar,
-  Navigation,
-  EffectFade,
-} from 'swiper/modules';
+import { A11y, Pagination, Navigation, EffectFade } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 
 const SwiperPortfolio = () => {
@@ -17,10 +11,9 @@ const SwiperPortfolio = () => {
         slidesPerView={3}
         onSlideChange={() => console.log('slide change')}
         onSwiper={swiper => console.log(swiper)}
-        modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
+        modules={[Navigation, Pagination, A11y, EffectFade]}
         navigation
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
         //   effect="fade"
         //   zoom={true}
         loop="true"
