@@ -1,11 +1,16 @@
 import Portfolio from '../components/portfolio/Portfolio';
+import Hero from '../components/Hero';
+import About from '../components/about/About';
+import Contacts from '../components/contacts/Contacts';
 
 const Home = () => {
   return (
-    <>
-      <section id="home">Home</section>
+    <div className="flex flex-col gap-96">
+      <Hero />
+      <About />
       <Portfolio />
-    </>
+      <Contacts />
+    </div>
   );
 };
 

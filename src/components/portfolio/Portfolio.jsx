@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Portfolio = () => {
-  return <div>port</div>;
+  return (
+    <section id="portfolio" className="text-[--color]">
+      port
+    </section>
+  );
 };
 
 export default Portfolio;

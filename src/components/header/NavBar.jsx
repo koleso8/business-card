@@ -12,7 +12,7 @@ const NavBar = () => {
           <a href="#portfolio">Portfolio</a>
         </li>
         <li className="p-3">
-          <a href="#contact">Contact</a>
+          <a href="#contacts">Contact</a>
         </li>
       </ul>
     </nav>
