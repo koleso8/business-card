@@ -3,7 +3,7 @@ const NavBar = () => {
     <nav className="text-[--color]">
       <ul className="flex gap-4">
         <li className="p-3">
-          <a href="#home">Home</a>
+          <a href="#hero">Home</a>
         </li>
         <li className="p-3">
           <a href="#about">About</a>

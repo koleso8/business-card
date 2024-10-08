@@ -8,6 +8,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { selectTheme } from '../../redux/theme/selectors';
 import { MdSunny } from 'react-icons/md';
 import NavBar from './NavBar';
+import { scrollToTop } from '../../helpers/scrollToTop';
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -17,15 +18,15 @@ const Header = () => {
     dispatch(setTheme());
   });
   return (
-    <header className="fixed backdrop-blur-xl w-screen transition-transform ease-in-out delay-150 duration-300 header flex items-center justify-center  py-2">
+    <header className="fixed backdrop-blur-xl w-screen transition-transform ease-in-out delay-150 duration-300 header flex items-center justify-center  py-2 z-50">
       <div className="w-[90%] flex items-center justify-between gap-3">
-        <a href="#home" className="flex items-center gap-2">
+        <button className="flex items-center gap-2" onClick={scrollToTop}>
           <RxColorWheel
             size="60px"
             className="animate-spin-slow text-[--color]"
           />
           <h2 className=" text-4xl text-[--color]">dev.Koleso</h2>
-        </a>
+        </button>
 
         <NavBar />
         <button

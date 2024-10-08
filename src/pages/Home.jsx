@@ -5,7 +5,7 @@ import Contacts from '../components/contacts/Contacts';
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-96">
+    <div className="flex flex-col gap-10">
       <Hero />
       <About />
       <Portfolio />
