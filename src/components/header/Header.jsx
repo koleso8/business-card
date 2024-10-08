@@ -7,23 +7,27 @@ import { changeTheme, setTheme } from '../../redux/theme/slice';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { selectTheme } from '../../redux/theme/selectors';
 import { MdSunny } from 'react-icons/md';
+import NavBar from './NavBar';
 
 const Header = () => {
   const dispatch = useDispatch();
   const theme = useSelector(selectTheme);
   useEffect(() => {
     headerHide();
-    // startEffect();
     dispatch(setTheme());
   });
   return (
     <header className="fixed backdrop-blur-xl w-screen transition-transform ease-in-out delay-150 duration-300 header flex items-center justify-center  py-2">
-      <div className="w-[90%] flex items-center gap-3">
-        <RxColorWheel
-          size="60px"
-          className="animate-spin-slow text-[--color]"
-        />
-        <h2 className=" text-4xl text-[--color]">dev.Koleso</h2>
+      <div className="w-[90%] flex items-center justify-between gap-3">
+        <a href="#home" className="flex items-center gap-2">
+          <RxColorWheel
+            size="60px"
+            className="animate-spin-slow text-[--color]"
+          />
+          <h2 className=" text-4xl text-[--color]">dev.Koleso</h2>
+        </a>
+
+        <NavBar />
         <button
           onClick={() => dispatch(changeTheme())}
           className="flex justify-center items-center bg-[--color]  w-10 h-10 p-1 rounded-full"

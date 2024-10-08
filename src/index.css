@@ -5,7 +5,10 @@
 @tailwind utilities;
 
 .active {
-  color: #1d4ed8;
+  color: #bebebe;
+  border-radius: 34px;
+  border: 1px solid #bebebe;
+  padding: 6px 6px 8px 6px;
 }
 
 .hideHeader {
