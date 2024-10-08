@@ -18,3 +18,14 @@ html {
 .hideHeader {
   transform: translateY(-100%);
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color);
+  height: 40px;
+  padding: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--red);
+}

@@ -9,13 +9,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Vanta theme={theme} />
-      <div className="flex flex-col justify-between items-center w-screen ">
-        <Header />
-        <main className=" pt-20 min-h-screen px-1  pb-3 w-full max-w-[375px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px]">
-          {children}
-        </main>
-        <Footer />
-      </div>
+      <Header />
+      <main className=" pt-20 min-h-screen px-1  pb-3 w-full max-w-[375px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] mx-auto ">
+        {children}
+      </main>
+      <Footer />
     </>
   );
 };

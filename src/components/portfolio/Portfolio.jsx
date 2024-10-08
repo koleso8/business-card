@@ -1,11 +1,7 @@
-import React from 'react';
+import SwiperPortfolio from './SwiperPortfolio';
 
 const Portfolio = () => {
-  return (
-    <section id="portfolio" className="text-[--color]">
-      port
-    </section>
-  );
+  return <SwiperPortfolio />;
 };
 
 export default Portfolio;
