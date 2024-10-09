@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="text-[--color] w-full h-[50vh] backdrop-blur-lg p-8 rounded-xl text-center"
+      className="text-[--color] w-full h-[50vh] backdrop-blur-lg p-8 rounded-xl text-center mb-5"
     >
       <h3 className="text-2xl mb-5">About</h3>
       <p>

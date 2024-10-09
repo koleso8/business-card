@@ -1,4 +1,5 @@
 @import url('./util/variables.css');
+@import url('./util/scroll.css');
 
 @tailwind base;
 @tailwind components;

@@ -1,52 +1,131 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+  A11y,
+  Pagination,
+  Navigation,
+  EffectCoverflow,
+  Mousewheel,
+} from 'swiper/modules';
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
+
 import 'swiper/swiper-bundle.css';
-import { A11y, Pagination, Navigation, EffectFade } from 'swiper/modules';
-import { Link } from 'react-router-dom';
+import { useScreenWidth } from '../../hooks/useScreenWidth';
 
 const SwiperPortfolio = () => {
+  const { isDesktop } = useScreenWidth();
+
   return (
-    <>
+    <section className="flex flex-col justify-center relative">
       <Swiper
         spaceBetween={50}
-        slidesPerView={3}
+        // slidesPerView={3}
         onSlideChange={() => console.log('slide change')}
         onSwiper={swiper => console.log(swiper)}
-        modules={[Navigation, Pagination, A11y, EffectFade]}
-        navigation
+        modules={[Navigation, Pagination, A11y, EffectCoverflow, Mousewheel]}
+        mousewheel={true}
+        navigation={{
+          nextEl: '.swiper-button-nex',
+          prevEl: '.swiper-button-pre',
+          clickable: true,
+        }}
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={3}
+        coverflowEffect={{
+          rotate: -30,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
         pagination={{ clickable: true }}
-        //   effect="fade"
         //   zoom={true}
-        loop="true"
+        loop={true}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+          },
+        }}
         className="w-[90%] h-96"
       >
-        <SwiperSlide className="text-[--color] h-80 backdrop-blur-2xl">
-          <a href="#asda" className="cursor-pointer w-full h-full">
-            slide
-          </a>
+        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          <img src="" alt="" className="w-full h-56 mb-2" />
+          <h3 className="text-center">Slide 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
+          </p>
         </SwiperSlide>
-        <SwiperSlide className="text-[--color] h-80 backdrop-blur-2xl">
-          Slide 2
+        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          <img src="" alt="" className="w-full h-56 mb-2" />
+          <h3 className="text-center">Slide 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
+          </p>
         </SwiperSlide>
-        <SwiperSlide className="text-[--color] h-80 backdrop-blur-2xl">
-          Slide 3
+        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          <img src="" alt="" className="w-full h-56 mb-2" />
+          <h3 className="text-center">Slide 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
+          </p>
         </SwiperSlide>
-        <SwiperSlide className="text-[--color] h-80 backdrop-blur-2xl">
-          Slide 4
+        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          <img src="" alt="" className="w-full h-56 mb-2" />
+          <h3 className="text-center">Slide 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
+          </p>
         </SwiperSlide>
-        <SwiperSlide className="text-[--color] h-80 backdrop-blur-2xl">
-          Slide 5
+        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          <img src="" alt="" className="w-full h-56 mb-2" />
+          <h3 className="text-center">Slide 5</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
+          </p>
         </SwiperSlide>
-        <SwiperSlide className="text-[--color] h-80 backdrop-blur-2xl">
-          Slide 6
+        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          <img src="" alt="" className="w-full h-56 mb-2" />
+          <h3 className="text-center">Slide 6</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
+          </p>
         </SwiperSlide>
-        <SwiperSlide className="text-[--color] h-80 backdrop-blur-2xl">
-          Slide 7
+        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          <img src="" alt="" className="w-full h-56 mb-2" />
+          <h3 className="text-center">Slide 7</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
+          </p>
         </SwiperSlide>
-        <SwiperSlide className="text-[--color] h-80 backdrop-blur-2xl">
-          Slide 8
+        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          <img src="" alt="" className="w-full h-56 mb-2" />
+          <h3 className="text-center">Slide 8</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
+          </p>
         </SwiperSlide>
       </Swiper>
-    </>
+      {isDesktop && (
+        <div className="slider-controler mx-auto text-[--red] text-5xl flex gap-52">
+          <button className="swiper-button-pre absolute bottom-0 left-[20%] z-10">
+            <FaArrowAltCircleLeft />
+          </button>
+          <button className="swiper-button-nex absolute bottom-0 right-[20%] z-10">
+            <FaArrowAltCircleRight />
+          </button>
+        </div>
+      )}
+    </section>
   );
 };
 

@@ -1,6 +1,9 @@
 const Hero = () => {
   return (
-    <section id="hero" className="w-full text-[--color] flex justify-between">
+    <section
+      id="hero"
+      className="w-full text-[--color] flex justify-between mb-5"
+    >
       <div className="w-[45%] h-[50vh] backdrop-blur-lg p-8 rounded-xl text-center">
         <h2>devdevde</h2>
         <p>
