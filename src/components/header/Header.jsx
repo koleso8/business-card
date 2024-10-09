@@ -31,8 +31,8 @@ const Header = () => {
   });
   return (
     <>
-      <header className="fixed backdrop-blur-xl w-screen transition-transform ease-in-out delay-150 duration-300 header flex items-center justify-center  py-2 z-50">
-        <div className="w-[90%] flex items-center justify-between gap-3">
+      <header className="fixed backdrop-blur-xl w-screen transition-transform ease-in-out delay-150 duration-300 header flex items-center justify-center  p-2 z-50">
+        <div className=" flex items-center justify-between gap-3 w-full max-w-[375px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] mx-auto pr-2">
           <button className="flex items-center gap-2" onClick={scrollToTop}>
             <RxColorWheel
               size="60px"
