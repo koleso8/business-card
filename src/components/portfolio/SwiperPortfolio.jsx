@@ -43,7 +43,7 @@ const SwiperPortfolio = () => {
         //   zoom={true}
         loop={true}
         breakpoints={{
-          640: {
+          320: {
             slidesPerView: 1,
             spaceBetween: 20,
           },
@@ -53,12 +53,12 @@ const SwiperPortfolio = () => {
           },
           1280: {
             slidesPerView: 3,
-            spaceBetween: 60,
+            spaceBetween: 10,
           },
         }}
-        className="w-[90%] h-96"
+        className="w-full h-96 "
       >
-        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl ">
           <img src="" alt="" className="w-full h-56 mb-2" />
           <h3 className="text-center">Slide 1</h3>
           <p>
