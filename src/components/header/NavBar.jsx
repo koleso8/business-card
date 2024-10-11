@@ -16,9 +16,8 @@ const NavBar = ({ isOpen, setIsOpen }) => {
           isMobile && 'flex-col text-2xl gap-10 text-center'
         }`}
       >
-        <li className="p-3">
+        <li className="p-3 cursor-pointer">
           <a
-            href=""
             onClick={() => {
               scrollToTop();
               setIsOpen(false);

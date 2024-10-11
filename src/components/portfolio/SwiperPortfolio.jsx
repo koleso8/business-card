@@ -10,6 +10,7 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 
 import 'swiper/swiper-bundle.css';
 import { useScreenWidth } from '../../hooks/useScreenWidth';
+import { images } from '../../images/images';
 
 const SwiperPortfolio = () => {
   const { isDesktop } = useScreenWidth();
@@ -59,20 +60,31 @@ const SwiperPortfolio = () => {
         className="w-full h-96 "
       >
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl ">
-          <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3>Slide 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
-          </p>
+          {/* 1 Slide */}
+          <a href="https://koleso8.github.io/project-html-css-team-1/">
+            <img
+              src={images.watch}
+              alt=""
+              className="w-full h-56 mb-2 object-cover"
+            />
+          </a>
+          <h3>WatchCharm</h3>
+          <p>Сайт для продажу годинників.</p>
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
-          <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3>Slide 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
-          </p>
+          {/* 2 Slide */}
+          <a href="https://koleso8.github.io/js2team_proj/">
+            <img
+              src={images.bussinesCard}
+              alt=""
+              className="w-full h-56 mb-2 object-cover"
+            />
+          </a>
+          <h3>Сайт - візитівка</h3>
+          <p>Сайт - візитівка для фулстек розробника.</p>
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          {/* 3 Slide */}
           <img src="" alt="" className="w-full h-56 mb-2" />
           <h3>Slide 3</h3>
           <p>
@@ -80,6 +92,7 @@ const SwiperPortfolio = () => {
           </p>
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          {/* 4 Slide */}
           <img src="" alt="" className="w-full h-56 mb-2" />
           <h3>Slide 4</h3>
           <p>
@@ -87,6 +100,7 @@ const SwiperPortfolio = () => {
           </p>
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          {/* 5 Slide */}
           <img src="" alt="" className="w-full h-56 mb-2" />
           <h3>Slide 5</h3>
           <p>
@@ -94,6 +108,7 @@ const SwiperPortfolio = () => {
           </p>
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          {/* 6 Slide */}
           <img src="" alt="" className="w-full h-56 mb-2" />
           <h3>Slide 6</h3>
           <p>
@@ -101,6 +116,7 @@ const SwiperPortfolio = () => {
           </p>
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          {/* 7 Slide */}
           <img src="" alt="" className="w-full h-56 mb-2" />
           <h3>Slide 7</h3>
           <p>
@@ -108,6 +124,7 @@ const SwiperPortfolio = () => {
           </p>
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+          {/* 8 Slide */}
           <img src="" alt="" className="w-full h-56 mb-2" />
           <h3>Slide 8</h3>
           <p>
