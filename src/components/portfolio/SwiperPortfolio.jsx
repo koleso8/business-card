@@ -61,22 +61,22 @@ const SwiperPortfolio = () => {
       >
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl ">
           {/* 1 Slide */}
-          <a href="https://koleso8.github.io/project-html-css-team-1/">
+          <a href="https://lox-local-offers-exchange.vercel.app/">
             <img
-              src={images.watch}
+              src={images.lox}
               alt=""
               className="w-full h-56 mb-2 object-cover"
             />
           </a>
-          <h3>WatchCharm</h3>
-          <p>Сайт для продажу годинників.</p>
+          <h3>Local Offers Exchange</h3>
+          <p>Сайт для пошуку юриста, та надання юридичних послуг.</p>
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           {/* 2 Slide */}
           <a href="https://koleso8.github.io/js2team_proj/">
             <img
               src={images.bussinesCard}
-              alt=""
+              alt="site"
               className="w-full h-56 mb-2 object-cover"
             />
           </a>
@@ -85,27 +85,39 @@ const SwiperPortfolio = () => {
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           {/* 3 Slide */}
-          <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3>Slide 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
-          </p>
+          <a href="https://money-guard-2.vercel.app/">
+            <img
+              src={images.moneyGuard}
+              alt="moneyGuard"
+              className="w-full h-56 mb-2 object-cover"
+            />
+          </a>
+          <h3>Money Guard</h3>
+          <p>Додаток для обліку фінансів</p>
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           {/* 4 Slide */}
-          <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3>Slide 4</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
-          </p>
+          <a href="https://koleso8.github.io/Sweet_Candy/">
+            <img
+              src={images.sweetCandy}
+              alt="sweetCandy"
+              className="w-full h-56 mb-2 object-cover"
+            />
+          </a>
+          <h3>Sweet Candy Legend</h3>
+          <p>Волонтерський проєкт для розробників ігор для мобільних</p>
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           {/* 5 Slide */}
-          <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3>Slide 5</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
-          </p>
+          <a href="https://koleso8.github.io/project-html-css-team-1/">
+            <img
+              src={images.watch}
+              alt="watch"
+              className="w-full h-56 mb-2 object-cover"
+            />
+          </a>
+          <h3>WatchCharm</h3>
+          <p>Сайт для продажу годинників.</p>
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           {/* 6 Slide */}
@@ -125,11 +137,15 @@ const SwiperPortfolio = () => {
         </SwiperSlide>
         <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           {/* 8 Slide */}
-          <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3>Slide 8</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
-          </p>
+          <a href="https://koleso8.github.io/goit-markup-hw-06/">
+            <img
+              src={images.webLand}
+              alt=""
+              className="w-full h-56 mb-2 object-cover"
+            />
+          </a>
+          <h3>Web Studio</h3>
+          <p>Лендінг для веб-студії</p>
         </SwiperSlide>
       </Swiper>
       {isDesktop && (
