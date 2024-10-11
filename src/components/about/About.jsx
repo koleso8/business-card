@@ -11,12 +11,6 @@ const About = () => {
         quos nisi ut mollitia odit facilis alias libero magnam cumque sit
         incidunt corporis, nemo assumenda! Laborum voluptatum sequi molestias
         quidem quia ea! Quas aspernatur magni voluptatem quos similique ratione
-        natus, nemo inventore distinctio quibusdam facilis et, culpa cum magnam
-        omnis ex asperiores eaque repudiandae. Doloribus neque natus amet alias
-        harum quis blanditiis, numquam assumenda dolore provident dolores!
-        Voluptate nesciunt deleniti nihil sunt obcaecati culpa possimus
-        repudiandae ipsum quam tempore. Eligendi architecto culpa labore
-        cupiditate a ab illum minima amet quos dicta?
       </p>
     </section>
   );

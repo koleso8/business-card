@@ -58,9 +58,9 @@ const Header = () => {
             </button>
           )}
           {isMobile && <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />}
+          {isMobile && <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />}
         </div>
       </header>
-      {isMobile && <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />}
     </>
   );
 };

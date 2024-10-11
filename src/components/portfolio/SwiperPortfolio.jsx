@@ -15,14 +15,14 @@ const SwiperPortfolio = () => {
   const { isDesktop } = useScreenWidth();
 
   return (
-    <section className="flex flex-col justify-center relative">
+    <section id="portfolio" className="flex flex-col justify-center relative">
       <Swiper
         spaceBetween={50}
         // slidesPerView={3}
         onSlideChange={() => console.log('slide change')}
         onSwiper={swiper => console.log(swiper)}
         modules={[Navigation, Pagination, A11y, EffectCoverflow, Mousewheel]}
-        mousewheel={true}
+        // mousewheel={true}
         navigation={{
           nextEl: '.swiper-button-nex',
           prevEl: '.swiper-button-pre',
@@ -58,58 +58,58 @@ const SwiperPortfolio = () => {
         }}
         className="w-full h-96 "
       >
-        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl ">
+        <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl ">
           <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3 className="text-center">Slide 1</h3>
+          <h3>Slide 1</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
           </p>
         </SwiperSlide>
-        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+        <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3 className="text-center">Slide 2</h3>
+          <h3>Slide 2</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
           </p>
         </SwiperSlide>
-        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+        <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3 className="text-center">Slide 3</h3>
+          <h3>Slide 3</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
           </p>
         </SwiperSlide>
-        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+        <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3 className="text-center">Slide 4</h3>
+          <h3>Slide 4</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
           </p>
         </SwiperSlide>
-        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+        <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3 className="text-center">Slide 5</h3>
+          <h3>Slide 5</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
           </p>
         </SwiperSlide>
-        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+        <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3 className="text-center">Slide 6</h3>
+          <h3>Slide 6</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
           </p>
         </SwiperSlide>
-        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+        <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3 className="text-center">Slide 7</h3>
+          <h3>Slide 7</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
           </p>
         </SwiperSlide>
-        <SwiperSlide className="p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
+        <SwiperSlide className="text-center p-2 text-[--color] flex flex-col h-80 backdrop-blur-2xl">
           <img src="" alt="" className="w-full h-56 mb-2" />
-          <h3 className="text-center">Slide 8</h3>
+          <h3>Slide 8</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis!
           </p>
