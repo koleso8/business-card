@@ -12,6 +12,13 @@ const About = () => {
         incidunt corporis, nemo assumenda! Laborum voluptatum sequi molestias
         quidem quia ea! Quas aspernatur magni voluptatem quos similique ratione
       </p>
+      <a
+        href="https://drive.google.com/file/d/1e63CA7Jdfx3OW-JBf_T5rrKN_JxgsMAs/view"
+        target="_blank"
+        className=" underline"
+      >
+        Резюме
+      </a>
     </section>
   );
 };
