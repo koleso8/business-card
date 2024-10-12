@@ -23,22 +23,22 @@ const NavBar = ({ isOpen, setIsOpen }) => {
               setIsOpen(false);
             }}
           >
-            Home
+            Головна
           </a>
         </li>
         <li className="p-3">
           <a href="#about" onClick={() => setIsOpen(false)}>
-            About
+            Про мене
           </a>
         </li>
         <li className="p-3">
           <a href="#portfolio" onClick={() => setIsOpen(false)}>
-            Portfolio
+            Портфоліо
           </a>
         </li>
         <li className="p-3">
           <a href="#contacts" onClick={() => setIsOpen(false)}>
-            Contact
+            Контакти
           </a>
         </li>
       </ul>
