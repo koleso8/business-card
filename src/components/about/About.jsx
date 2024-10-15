@@ -6,11 +6,14 @@ const About = () => {
     >
       <h3 className="text-2xl mb-5">About</h3>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illo
-        aut fugiat veniam, asperiores fugit unde similique cupiditate molestias,
-        quos nisi ut mollitia odit facilis alias libero magnam cumque sit
-        incidunt corporis, nemo assumenda! Laborum voluptatum sequi molestias
-        quidem quia ea! Quas aspernatur magni voluptatem quos similique ratione
+        I am a dedicated and innovative professional transitioning into the tech
+        industry . Having completed a Full Stack Developer Bootcamp at GOIT, I
+        possess hands-on experience in HTML, CSS, JavaScript, React through two
+        group projects and a few personal. I excel in dynamic environments where
+        I can leverage my creativity and fast-learning abilities to develop and
+        deploy user-centric applications. My experience with Scrum and Agile
+        methodologies further enhances my ability to deliver projects on time
+        and within scope.
       </p>
       <a
         href="https://drive.google.com/file/d/1e63CA7Jdfx3OW-JBf_T5rrKN_JxgsMAs/view"
